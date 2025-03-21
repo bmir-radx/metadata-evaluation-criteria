@@ -1,0 +1,8 @@
+site_name: Metadata Evaluation Criteria Documentation
+site_url: https://bmir-radx.github.io/metadata-evaluation-criteria/
+
+theme:
+  name: readthedocs
+
+nav:
+  - Home: index.md
