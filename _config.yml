@@ -2,8 +2,8 @@ title: "Metadata Evaluation Criteria"
 description: "A documentation site for metadata evaluation standards"
 baseurl: "/metadata-evaluation-criteria"
 url: "https://bmir-radx.github.io"
-#remote_theme: just-the-docs/just-the-docs
 remote_theme: just-the-docs/just-the-docs
+#remote_theme: just-the-docs/just-the-docs
 
 # Enable navigation
 has_toc: true
@@ -13,6 +13,7 @@ permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 # Exclude unnecessary files
 exclude:
