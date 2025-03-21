@@ -42,6 +42,70 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#completeness">Completeness</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overall-completeness">Overall Completeness</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-fields-completeness">Required Fields Completeness</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recommended-fields-completeness">Recommended Fields Completeness</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#optional-fields-completeness">Optional Fields Completeness</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#consistency">Consistency</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#associated-metadata-consistency">Associated Metadata Consistency</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#overlapped-metadata-consistency">Overlapped Metadata Consistency</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cross-instance-metadata-consistency">Cross-instance Metadata Consistency</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#accuracy">Accuracy</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#external-reference-accuracy">External Reference Accuracy</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linked-resource-accuracy">Linked Resource Accuracy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#validity">Validity</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#file-format-validity">File Format Validity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#schema-validity">Schema Validity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#value-constraint-validity">Value Constraint Validity</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#accessibility">Accessibility</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#link-accessibility">Link Accessibility</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uniqueness">Uniqueness</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#metadata-instance-uniqueness">Metadata Instance Uniqueness</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#linguistic-quality">Linguistic Quality</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#text-formatting-consistency">Text Formatting Consistency</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#grammatical-correctness">Grammatical Correctness</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#spelling-accuracy">Spelling Accuracy</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#punctuation-accuracy">Punctuation Accuracy</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -69,7 +133,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="metadata-evaluation-criteria">Metadata Evaluation Criteria</h1>
-<h1 id="completeness">Completeness</h1>
+<h2 id="completeness">Completeness</h2>
 <hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 <h3 id="overall-completeness">Overall Completeness</h3>
@@ -84,7 +148,7 @@
 <h3 id="optional-fields-completeness">Optional Fields Completeness</h3>
 <p><span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: The percentage of optional fields that contain a non-empty value.</p>
 <p><span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A metadata template with 10 fields, 2 of which are optional. If 1 optional field is filled, the optional fields completeness is 50% (1/2).</p>
-<h1 id="consistency">Consistency</h1>
+<h2 id="consistency">Consistency</h2>
 <hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 <h3 id="associated-metadata-consistency">Associated Metadata Consistency</h3>
@@ -96,7 +160,7 @@
 <h3 id="cross-instance-metadata-consistency">Cross-instance Metadata Consistency</h3>
 <p><span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Common fields shared between study-level and data file-level metadata should have consistent values.</p>
 <p><span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: If both the study-level and data file-level metadata include the <code>Study Name</code>, the value should be identical in both instances.</p>
-<h1 id="accuracy">Accuracy</h1>
+<h2 id="accuracy">Accuracy</h2>
 <hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 <h3 id="external-reference-accuracy">External Reference Accuracy</h3>
@@ -105,7 +169,7 @@
 <h3 id="linked-resource-accuracy">Linked Resource Accuracy</h3>
 <p><span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Ensures that URLs provided in metadata resolve to the correct and intended external resource, accurately representing the associated study or content.</p>
 <p><span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Verified that <code>ClinicalTrials.gov URLs</code> point to the corresponding study.</p>
-<h1 id="validity">Validity</h1>
+<h2 id="validity">Validity</h2>
 <hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 <h3 id="file-format-validity">File Format Validity</h3>
@@ -117,19 +181,19 @@
 <h3 id="value-constraint-validity">Value Constraint Validity</h3>
 <p><span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Ensures that metadata conforms to the constraints specified in the CEDAR template, such as allowed controlled terms, formats, data types, and required patterns.</p>
 <p><span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A field like <code>Subjects</code>, constrained to controlled terms from an ontology (e.g., MeSH), must use valid concept labels such as <em>COVID-19</em>. Free-text variations like <em>covid-19</em> are not accepted, as they do not match the standardized ontology term.</p>
-<h1 id="accessibility">Accessibility</h1>
+<h2 id="accessibility">Accessibility</h2>
 <hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 <h3 id="link-accessibility">Link Accessibility</h3>
 <p><span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Evaluates whether all link-type fields are accessible and resolve to valid, publicly reachable web pages.</p>
 <p><span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Fields such as <code>Study Website URL</code>, <code>ClinicalTrials.gov URL</code>, <code>Publication URLs</code>, <code>Funding Opportunity Announcement (FOA) URL</code>, and <code>RAPIDS Link</code> are tested to ensure they are not broken and point to the intended resources.</p>
-<h1 id="uniqueness">Uniqueness</h1>
+<h2 id="uniqueness">Uniqueness</h2>
 <hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 <h3 id="metadata-instance-uniqueness">Metadata Instance Uniqueness</h3>
 <p><span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Ensures that each metadata instance is uniquely identifiable and not duplicated within the dataset or metadata repository.</p>
 <p><span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Two instances with the same combination of <code>Study ID</code>, <code>Data File Name</code>, and <code>Version</code> would violate uniqueness. Each metadata instance should have a distinct identifier or a unique combination of key fields to prevent duplication.</p>
-<h1 id="linguistic-quality">Linguistic Quality</h1>
+<h2 id="linguistic-quality">Linguistic Quality</h2>
 <hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 <h3 id="text-formatting-consistency">Text Formatting Consistency</h3>
@@ -187,5 +251,5 @@
 
 <!--
 MkDocs version : 1.6.0
-Build Date UTC : 2025-03-21 21:51:19.155943+00:00
+Build Date UTC : 2025-03-21 21:55:18.164499+00:00
 -->
