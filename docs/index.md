@@ -3,90 +3,148 @@ title: Metadata Evaluation Criteria
 has_toc: true
 ---
 
-# Metadata Quality Criteria
+# Metadata Evaluation Criteria
 
 ## Completeness
 
 ### Overall Completeness
-- **Description**: The percentage of all fields that contain a non-empty value.
-- **Example**: A metadata template with 10 fields, where 3 fields are empty, would have an overall completeness of 70% (7/10).
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: The percentage of all fields that contain a non-empty value.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A metadata template with 10 fields, where 3 fields are empty, would have an overall completeness of 70% (7/10).
 
 ### Required Fields Completeness
-- **Description**: The percentage of required fields that contain a non-empty value.
-- **Example**: A metadata template with 10 fields, 4 of which are required. If all 4 required fields are filled, the required fields completeness is 100% (4/4).
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: The percentage of required fields that contain a non-empty value.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A metadata template with 10 fields, 4 of which are required. If all 4 required fields are filled, the required fields completeness is 100% (4/4).
+
 
 ### Recommended Fields Completeness
-- **Description**: The percentage of recommended fields that contain a non-empty value.
-- **Example**: A metadata template with 10 fields, 4 of which are recommended. If 3 recommended fields are filled, the recommended fields completeness is 75% (3/4).
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: The percentage of recommended fields that contain a non-empty value.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A metadata template with 10 fields, 4 of which are recommended. If 3 recommended fields are filled, the recommended fields completeness is 75% (3/4).
+
 
 ### Optional Fields Completeness
-- **Description**: The percentage of optional fields that contain a non-empty value.
-- **Example**: A metadata template with 10 fields, 2 of which are optional. If 1 optional field is filled, the optional fields completeness is 50% (1/2).
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: The percentage of optional fields that contain a non-empty value.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A metadata template with 10 fields, 2 of which are optional. If 1 optional field is filled, the optional fields completeness is 50% (1/2).
+
 
 ## Consistency
 
+
 ### Associated Metadata Consistency
-- **Description**: Metadata fields that are logically related should be internally consistent.
-- **Example**: In the RADx Data Hub, the fields `Estimated Cohort Size` and `Cohort Size Range` should reflect the same cohort size. Similarly, `Full Name` should be consistent with `Given Name` and `Family Name`.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Metadata fields that are logically related should be internally consistent.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: In the RADx Data Hub, the fields `Estimated Cohort Size` and `Cohort Size Range` should reflect the same cohort size. Similarly, `Full Name` should be consistent with `Given Name` and `Family Name`.
+
 
 ### Overlapped Metadata Consistency
-- **Description**: Metadata fields containing overlapping information should be aligned in meaning and value.
-- **Example**: In the RADx Data Hub, if the `Acknowledgment Statement` mentions a supporting NIH institution or center, it should align with the `NIH Institute/Center` field in the same study metadata instance.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Metadata fields containing overlapping information should be aligned in meaning and value.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: In the RADx Data Hub, if the `Acknowledgment Statement` mentions a supporting NIH institution or center, it should align with the `NIH Institute/Center` field in the same study metadata instance.
+
 
 ### Cross-instance Metadata Consistency
-- **Description**: Common fields shared between study-level and data file-level metadata should have consistent values.
-- **Example**: If both the study-level and data file-level metadata include the `Study Name`, the value should be identical in both instances.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Common fields shared between study-level and data file-level metadata should have consistent values.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: If both the study-level and data file-level metadata include the `Study Name`, the value should be identical in both instances.
+
 
 ## Accuracy
 
+
 ### External Reference Accuracy
-- **Description**: Validates that metadata fields referencing external systems (e.g., NIH RePORTER, funding sources) accurately reflect the information found in those authoritative sources.
-- **Example**: Cross-checked against NIH RePORTER using provided `NIH Grant or Contract Number(s)` information to ensure alignment of `NIH Institute/Center` and `Funding Opportunity Announcement (FOA) Number` metadata.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Validates that metadata fields referencing external systems (e.g., NIH RePORTER, funding sources) accurately reflect the information found in those authoritative sources.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Cross-checked against NIH RePORTER using provided `NIH Grant or Contract Number(s)` information to ensure alignment of `NIH Institute/Center` and `Funding Opportunity Announcement (FOA) Number` metadata.
+
 
 ### Linked Resource Accuracy
-- **Description**: Ensures that URLs provided in metadata resolve to the correct and intended external resource, accurately representing the associated study or content.
-- **Example**: Verified that `ClinicalTrials.gov URLs` point to the corresponding study.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Ensures that URLs provided in metadata resolve to the correct and intended external resource, accurately representing the associated study or content.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Verified that `ClinicalTrials.gov URLs` point to the corresponding study.
+
 
 ## Validity
 
+
 ### File Format Validity
-- **Description**: Validates that the uploaded file is a well-formed and syntactically correct JSON file.
-- **Example**: A file that includes an unexpected trailing comma or unmatched brackets will fail this check.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Validates that the uploaded file is a well-formed and syntactically correct JSON file.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A file that includes an unexpected trailing comma or unmatched brackets will fail this check.
+
 
 ### Schema Validity
-- **Description**: Verifies that the JSON structure aligns with the defined CEDAR template.
-- **Example**: A JSON file missing required fields like `fileName` or `fileType` will not conform to the schema.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Verifies that the JSON structure aligns with the defined CEDAR template.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A JSON file missing required fields like `fileName` or `fileType` will not conform to the schema.
+
 
 ### Value Constraint Validity
-- **Description**: Ensures that metadata conforms to the constraints specified in the CEDAR template, such as allowed controlled terms, formats, data types, and required patterns.
-- **Example**: A field like `Subjects`, constrained to controlled terms from an ontology (e.g., MeSH), must use valid concept labels such as *COVID-19*. Free-text variations like *covid-19* are not accepted, as they do not match the standardized ontology term.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Ensures that metadata conforms to the constraints specified in the CEDAR template, such as allowed controlled terms, formats, data types, and required patterns.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A field like `Subjects`, constrained to controlled terms from an ontology (e.g., MeSH), must use valid concept labels such as *COVID-19*. Free-text variations like *covid-19* are not accepted, as they do not match the standardized ontology term.
+
 
 ## Accessibility
 
+
 ### Link Accessibility
-- **Description**: Evaluates whether all link-type fields are accessible and resolve to valid, publicly reachable web pages.
-- **Example**: Fields such as `Study Website URL`, `ClinicalTrials.gov URL`, `Publication URLs`, `Funding Opportunity Announcement (FOA) URL`, and `RAPIDS Link` are tested to ensure they are not broken and point to the intended resources.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Evaluates whether all link-type fields are accessible and resolve to valid, publicly reachable web pages.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Fields such as `Study Website URL`, `ClinicalTrials.gov URL`, `Publication URLs`, `Funding Opportunity Announcement (FOA) URL`, and `RAPIDS Link` are tested to ensure they are not broken and point to the intended resources.
+
 
 ## Uniqueness
 
+
 ### Metadata Instance Uniqueness
-- **Description**: Ensures that each metadata instance is uniquely identifiable and not duplicated within the dataset or metadata repository.
-- **Example**: Two instances with the same combination of `Study ID`, `Data File Name`, and `Version` would violate uniqueness. Each metadata instance should have a distinct identifier or a unique combination of key fields to prevent duplication.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Ensures that each metadata instance is uniquely identifiable and not duplicated within the dataset or metadata repository.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Two instances with the same combination of `Study ID`, `Data File Name`, and `Version` would violate uniqueness. Each metadata instance should have a distinct identifier or a unique combination of key fields to prevent duplication.
+
 
 ## Linguistic Quality
 
+
 ### Text Formatting Consistency
-- **Description**: Evaluates the consistency and cleanliness of text formatting.
-- **Example**: The presence of unnecessary spaces, inconsistent use of line breaks, or other visual irregularities that affect readability.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Evaluates the consistency and cleanliness of text formatting.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: The presence of unnecessary spaces, inconsistent use of line breaks, or other visual irregularities that affect readability.
+
 
 ### Grammatical Correctness
-- **Description**: Ensures that text adheres to proper grammatical rules, improving clarity, professionalism, and readability.
-- **Example**: A sentence like `"The study include data from 2020"` should be corrected to `"The study includes data from 2020"`.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Ensures that text adheres to proper grammatical rules, improving clarity, professionalism, and readability.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A sentence like `"The study include data from 2020"` should be corrected to `"The study includes data from 2020"`.
+
 
 ### Spelling Accuracy
-- **Description**: Detects and corrects spelling errors to maintain lexical precision and avoid ambiguity.
-- **Example**: A value like `"diabtes"` should be corrected to `"diabetes"`.
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Detects and corrects spelling errors to maintain lexical precision and avoid ambiguity.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A value like `"diabtes"` should be corrected to `"diabetes"`.
+
 
 ### Punctuation Accuracy
-- **Description**: Identifies missing or incorrect punctuation marks to ensure sentence completeness and proper structure.
-- **Example**: A sentence like `"This study investigates heart disease"` may require a period: `"This study investigates heart disease."`
+
+<span style="background-color: #cce4f6; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #003c66;">Description</span>: Identifies missing or incorrect punctuation marks to ensure sentence completeness and proper structure.
+
+<span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A sentence like `"This study investigates heart disease"` may require a period: `"This study investigates heart disease."`
