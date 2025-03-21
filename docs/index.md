@@ -5,7 +5,9 @@ has_toc: true
 
 # Metadata Evaluation Criteria
 
-## Completeness
+<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%;">
+  Completeness
+</div>
 
 ### Overall Completeness
 
@@ -34,7 +36,9 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A metadata template with 10 fields, 2 of which are optional. If 1 optional field is filled, the optional fields completeness is 50% (1/2).
 
 
-## Consistency
+<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%;">
+  Consistency
+</div>
 
 
 ### Associated Metadata Consistency
@@ -58,8 +62,9 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: If both the study-level and data file-level metadata include the `Study Name`, the value should be identical in both instances.
 
 
-## Accuracy
-
+<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%;">
+  Accuracy
+</div>
 
 ### External Reference Accuracy
 
@@ -75,7 +80,9 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Verified that `ClinicalTrials.gov URLs` point to the corresponding study.
 
 
-## Validity
+<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%;">
+  Validity
+</div>
 
 
 ### File Format Validity
@@ -99,7 +106,9 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A field like `Subjects`, constrained to controlled terms from an ontology (e.g., MeSH), must use valid concept labels such as *COVID-19*. Free-text variations like *covid-19* are not accepted, as they do not match the standardized ontology term.
 
 
-## Accessibility
+<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%;">
+  Accessibility
+</div>
 
 
 ### Link Accessibility
@@ -109,7 +118,9 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Fields such as `Study Website URL`, `ClinicalTrials.gov URL`, `Publication URLs`, `Funding Opportunity Announcement (FOA) URL`, and `RAPIDS Link` are tested to ensure they are not broken and point to the intended resources.
 
 
-## Uniqueness
+<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%;">
+  Uniqueness
+</div>
 
 
 ### Metadata Instance Uniqueness
@@ -119,7 +130,9 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Two instances with the same combination of `Study ID`, `Data File Name`, and `Version` would violate uniqueness. Each metadata instance should have a distinct identifier or a unique combination of key fields to prevent duplication.
 
 
-## Linguistic Quality
+<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%;">
+  Linguistic Quality
+</div>
 
 
 ### Text Formatting Consistency
