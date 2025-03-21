@@ -5,9 +5,8 @@ has_toc: true
 
 # Metadata Evaluation Criteria
 
-<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%; margin-bottom: 20px;">
-  Completeness
-</div>
+# Completeness
+<hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 ### Overall Completeness
 
@@ -36,10 +35,8 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A metadata template with 10 fields, 2 of which are optional. If 1 optional field is filled, the optional fields completeness is 50% (1/2).
 
 
-<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%; margin-bottom: 20px;">
-  Consistency
-</div>
-
+# Consistency
+<hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 ### Associated Metadata Consistency
 
@@ -62,9 +59,8 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: If both the study-level and data file-level metadata include the `Study Name`, the value should be identical in both instances.
 
 
-<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%; margin-bottom: 20px;">
-  Accuracy
-</div>
+# Accuracy
+<hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 ### External Reference Accuracy
 
@@ -80,9 +76,8 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Verified that `ClinicalTrials.gov URLs` point to the corresponding study.
 
 
-<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%; margin-bottom: 20px;">
-  Validity
-</div>
+# Validity
+<hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 
 ### File Format Validity
@@ -106,9 +101,8 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: A field like `Subjects`, constrained to controlled terms from an ontology (e.g., MeSH), must use valid concept labels such as *COVID-19*. Free-text variations like *covid-19* are not accepted, as they do not match the standardized ontology term.
 
 
-<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%; margin-bottom: 20px;">
-  Accessibility
-</div>
+# Accessibility
+<hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 
 ### Link Accessibility
@@ -118,9 +112,8 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Fields such as `Study Website URL`, `ClinicalTrials.gov URL`, `Publication URLs`, `Funding Opportunity Announcement (FOA) URL`, and `RAPIDS Link` are tested to ensure they are not broken and point to the intended resources.
 
 
-<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%; margin-bottom: 20px;">
-  Uniqueness
-</div>
+# Uniqueness
+<hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 
 ### Metadata Instance Uniqueness
@@ -130,9 +123,8 @@ has_toc: true
 <span style="background-color: #bde5c8; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #1e4620;">Example</span>: Two instances with the same combination of `Study ID`, `Data File Name`, and `Version` would violate uniqueness. Each metadata instance should have a distinct identifier or a unique combination of key fields to prevent duplication.
 
 
-<div style="background-color: #666666; color: white; padding: 4px 12px; font-size: 1.5em; font-weight: bold; width: 100%; margin-bottom: 20px;">
-  Linguistic Quality
-</div>
+# Linguistic Quality
+<hr style="border: none; border-top: 1px solid #ccc; margin-top: 0.2em; margin-bottom: 1.5em;">
 
 
 ### Text Formatting Consistency
